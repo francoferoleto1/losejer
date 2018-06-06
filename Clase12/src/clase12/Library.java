@@ -4,7 +4,9 @@ public class Library {
 	static int horasAbre = 9;
 	static int horasCierra = 5;
 	String adress;
-    public Library(String string) {
+    int numbersOfBooks = 0;
+    Book[] catalog = new Book[0];
+	public Library(String string) {
 		// TODO Auto-generated constructor stub
     	adress = string;
     }
@@ -20,7 +22,7 @@ public class Library {
 	}
 
 	public void borrowBook(String string) {
-		string.borrowed();
+		
 		
 	}
 
@@ -35,13 +37,13 @@ public class Library {
 	}
 
 	private void addBook(Book book) {
-		Book[] books = new Book[4];
-		for (int i = 0;i<books.length;i++) {
-			books[i] = book;
-			
+		if (numbersOfBooks >= 0) {
+			Book[] newArray = new Book[(numbersOfBooks + 1)];
+			System.arraycopy(catalog, 0, newArray, 0, numbersOfBooks);
+			catalog = newArray;
 		}
-		
-		
+		catalog[numbersOfBooks] = book ;
+		numbersOfBooks++;
 	}
 	public static void main(String[] args) {
         // Create two libraries

@@ -2,50 +2,42 @@ package clase12;
 public class Book {
 
     String title;
-    boolean borrowed;
+    static boolean borrowed; //por defecto es FALSA
 
-    // Creates a new Book
+    // Constructor
     public Book(String bookTitle) {
-        // Implement this method
-    	title = bookTitle;
+        title = bookTitle;
     }
    
-    // Marks the book as rented
+    // Marks the book as rented - SET
     public void borrowed() {
-        // Implement this method
-    	borrowed = true;
-    	
-    		
-   } 
+        borrowed = true;
+    }
    
-    // Marks the book as not rented
+    // Marks the book as not rented - SET
     public void returned() {
-        // Implement this method
-    	borrowed = false;
+        borrowed = false;
     }
    
-    // Returns true if the book is rented, false otherwise
+    // Returns true if the book is rented, false otherwise - GET
     public boolean isBorrowed() {
-        // Implement this method
-    	return borrowed;
+        return borrowed;
     }
    
-    // Returns the title of the book
+    // Returns the title of the book - GET
     public String getTitle() {
-        // Implement this method
-    	return title;
+        return title;
     }
 
-    public static void main(String[] arguments) {
-        // Small test of the Book class
-        Book example = new Book("The Da Vinci Code");
-        System.out.println("Title (should be The Da Vinci Code): " + example.getTitle());
-        System.out.println("Borrowed? (should be false): " + example.isBorrowed());
-        example.borrowed();
-        System.out.println("Borrowed? (should be true): " + example.isBorrowed());
-        example.returned();
-        System.out.println("Borrowed? (should be false): " + example.isBorrowed());
-    }
+//    public static void main(String[] arguments) {
+//        // Small test of the Book class
+//        Book example = new Book("The Da Vinci Code");
+//        
+//        System.out.println("Title (should be The Da Vinci Code): " + example.getTitle());
+//        System.out.println("Borrowed? (should be false): " + example.isBorrowed());
+//        example.borrowed();
+//        System.out.println("Borrowed? (should be true): " + example.isBorrowed());
+//        example.returned();
+//        System.out.println("Borrowed? (should be false): " + example.isBorrowed());
+//    }
 } 
-
-

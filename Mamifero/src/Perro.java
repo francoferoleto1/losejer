@@ -1,24 +1,28 @@
 
-public class Perro implements Signos {
+public class Perro extends Mamifero {
 
-	public String Hablar() {
-		String hablar = "ladra";
-		return hablar;
+	public Perro(int cantPatas) {
+		super(cantPatas);
+		
 	}
 
+	
+	public String Hablar(String palabra) {
+		
+		return palabra;
+	}
+
+	
 	public String Respirar() {
-		String respira = "respira";
-		return respira;
+		
+		return null;
 	}
 
+	
 	public String Caminar() {
-		String camina = "camina";
-		return camina;
+		
+		return null;
 	}
 
-	public int CantPatas() {
-
-		return 4;
-	}
-
+	
 }

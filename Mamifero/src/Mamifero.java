@@ -1,24 +1,20 @@
 
-public class Mamifero implements Signos {
-
-	public String Hablar() {
-		String hablar = "nose";
-		return hablar;
+public abstract class Mamifero {
+	
+	private int cantPatas;
+	
+	public abstract String Hablar(String palabra);
+	public abstract String Respirar();
+	public abstract String Caminar();
+	
+	public Mamifero(int cantPatas) {
+		this.cantPatas = cantPatas;
+		
+	}
+	
+	public int getCantPatas() {
+			return cantPatas;
 	}
 
-	public String Respirar() {
-		String respira = "Respiro";
-		return respira;
-	}
-
-	public String Caminar() {
-		String camina = "Camino";
-		return camina;
-	}
-
-	public int CantPatas() {
-
-		return 0;
-	}
-
+	
 }

@@ -1,27 +1,66 @@
-
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Perro doggo = new Perro(); 
-		Gato macri = new Gato();
-		Humano imbecil = new Humano();
 		
-		System.out.println("El perro "+doggo.Hablar());
-		System.out.println("El gato "+macri.Hablar());
-		System.out.println("El humano "+imbecil.Hablar());
-		System.out.println(" ");
-		System.out.println("El perro "+doggo.Caminar());
-		System.out.println("El gato "+macri.Caminar());
-		System.out.println("El humano "+imbecil.Caminar());
-		System.out.println(" ");
-		System.out.println("El perro "+doggo.Respirar());
-		System.out.println("El gato "+macri.Respirar());
-		System.out.println("El humano "+imbecil.Respirar());
-		System.out.println(" ");
-		System.out.println("El perro "+doggo.CantPatas());
-		System.out.println("El gato "+macri.CantPatas());
-		System.out.println("El humano "+imbecil.CantPatas());
+		Scanner sc = new Scanner(System.in);
+		Scanner patas = new Scanner(System.in);
+		Scanner palabra = new Scanner(System.in);
+		
+		System.out.println("Que desea crear?");
+		System.out.println("1) Una bestia asesina");
+		System.out.println("2) un Batman");
+		System.out.println("3) El animal de Jesuscristo");
+		
+		switch (sc.nextInt()) {
+		case  1: 
+			System.out.println("Cuantas patas va a tener la bestia asesina?");
+			System.out.println("Que quiere que diga su bestia?");
+			Gato macri = new Gato(patas.nextInt());
+			palabra.nextLine();
+			System.out.println("Creamos a una bestia asesina que dice "+ palabra +"");	
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		System.out.println("El perro "+doggo.hablar());
+//		System.out.println("El gato "+macri.hablar());
+//		System.out.println("El humano "+imbecil.hablar());
+//		System.out.println(" ");
+//		System.out.println("El perro "+doggo.caminar());
+//		System.out.println("El gato "+macri.caminar());
+//		System.out.println("El humano "+imbecil.caminar());
+//		System.out.println(" ");
+//		System.out.println("El perro "+doggo.respirar());
+//		System.out.println("El gato "+macri.respirar());
+//		System.out.println("El humano "+imbecil.respirar());
+//		System.out.println(" ");
+//		System.out.println("El perro "+doggo.getCantPatas());
+//		System.out.println("El gato "+macri.getCantPatas());
+//		System.out.println("El humano "+imbecil.getCantPatas());
 	}
 
 }

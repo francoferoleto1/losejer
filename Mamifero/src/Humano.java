@@ -1,24 +1,10 @@
 
-public class Humano implements Signos {
+public abstract class Humano extends Mamifero  {
 
-	public String Hablar() {
-		String hablar = "ladra";
-		return hablar;
+	public Humano(int cantPatas) {
+		super(cantPatas);
+		
 	}
 
-	public String Respirar() {
-		String respira = "respira";
-		return respira;
-	}
-
-	public String Caminar() {
-		String camina = "camina";
-		return camina;
-	}
-
-	public int CantPatas() {
-
-		return 2;
-	}
-
+	
 }

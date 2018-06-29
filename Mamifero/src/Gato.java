@@ -1,24 +1,28 @@
 
-public class Gato implements Signos {
+public class Gato extends Mamifero {
 
-	public String Hablar() {
-		String hablar = "maulla";
-		return hablar;
+	public Gato(int cantPatas) {
+		super(cantPatas);
+		
+	}
+	
+	public String Hablar(String palabra) {
+		
+		return palabra;
 	}
 
+	
 	public String Respirar() {
-		String respira = "respira";
-		return respira;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
+	
 	public String Caminar() {
-		String camina = "camina";
-		return camina;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	public int CantPatas() {
-
-		return 4;
-	}
+	
 
 }
